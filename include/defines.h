@@ -16,8 +16,8 @@
 
 //i2c
 #define I2C_DEV_ADDR    0x55
-#define I2C_PIN_SDA        4
-#define I2C_PIN_SCL        2
+#define I2C_PIN_SDA        10 //SDA Pin SC01 Plus Extended IO Interface Pin 3 (fuer SC01 Angabe 32)
+#define I2C_PIN_SCL        11 //SCL Pin SC01 Plus External IO Interface Pin 4 (fuer SC01 Angabe 33)
 
 
 #define RXBUFF_OFFSET                     0x04

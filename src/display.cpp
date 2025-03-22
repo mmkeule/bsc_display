@@ -6,9 +6,13 @@
 #include "display.h"
 #include "i2c.h"
 #include "data.h"
+#include "PanelLan.h"
 
+// BOARD_SC01_PLUS, BOARD_SC02, BOARD_SC05, BOARD_KC01, BOARD_BC02, BOARD_SC07
+//Achtung, bei änderung des Boards auch in der defines.h die i2c Ports anpassen
+PanelLan lcd(BOARD_SC01_PLUS);
 
-#define LGFX_AUTODETECT // Autodetect board
+//#define LGFX_AUTODETECT // Autodetect board
 #define LGFX_USE_V1     // set to use new version of library
 
 #include <LovyanGFX.hpp> // main library
@@ -20,7 +24,7 @@
 static int32_t x, y;
 #endif
 
-static LGFX lcd;
+//static LGFX lcd;
 
 static const uint16_t screenWidth = 480;
 static const uint16_t screenHeight = 320;
@@ -53,7 +57,7 @@ void createScreens(void);
 
 void displayInit()
 {
-  lcd.init(); // init LovyanGFX
+  lcd.begin(); // init LovyanGFX
   lv_init();  // init lvgl
 
   // Setting display to landscape

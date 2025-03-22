@@ -1,4 +1,6 @@
 # Statusdisplay für den Battery safety controller (BSC) 
+Dies ist ein angepasster Fork des Repository von shining-man um die Palette der Panlee Displays nutzen zu können
+
 <img src="https://github.com/user-attachments/assets/8db86295-1d72-4389-9650-80bd504366ac" height="500"/>
 <br><br>
 Das Display zeigt den Status des Battery safety controllers (BSC).<br>
@@ -30,3 +32,11 @@ SCL: GPIO33<br>
 <br>
 ![Picture_BSC_Display_BMS](https://github.com/shining-man/bsc_display/blob/main/img/Disp_BMS.jpg?raw=true)
 ![Picture_BSC_Display_Cellspgannungen](https://github.com/shining-man/bsc_display/blob/main/img/Disp_Cell.jpg?raw=true)
+
+## BOARD-Datei WT32.json
+Bitte die Boarddatei im Benutzerordner z.B.: C:\Users\Username\.platformio\platforms\espressif32\boards platzieren. 
+Darauf achten welche Platform genutzt wird
+
+## PanelLan Library
+in der Display.cpp kann nun in Zeile 13 Das gewünschte Board ausgewählt werden. Bitte beachten, dass auch die i2C Pins
+entsprechend angepasst werden müssen. Dies geht in der Datei include/defines.h

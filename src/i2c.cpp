@@ -28,7 +28,7 @@ void initI2C()
 
   I2C.onReceive(onReceive);
   //I2C.onRequest(onRequest);
-  Serial.println(I2C.begin((uint8_t)I2C_DEV_ADDR,32,33,1000000));
+  Serial.println(I2C.begin((uint8_t)I2C_DEV_ADDR,I2C_PIN_SDA,I2C_PIN_SCL,1000000));
 }
 
 
