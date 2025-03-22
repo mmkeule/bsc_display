@@ -34,7 +34,7 @@ SCL: GPIO33<br>
 ![Picture_BSC_Display_Cellspgannungen](https://github.com/shining-man/bsc_display/blob/main/img/Disp_Cell.jpg?raw=true)
 
 ## BOARD-Datei WT32.json
-Bitte die Boarddatei im Benutzerordner z.B.: C:\Users\Username\.platformio\platforms\espressif32\boards platzieren. 
+Bitte die Boarddatei im Benutzerordner z.B.: C:\Users\Username\\.platformio\platforms\espressif32\boards platzieren. 
 Darauf achten welche Platform genutzt wird
 
 ## PanelLan Library
