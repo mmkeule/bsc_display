@@ -1,5 +1,6 @@
 # Statusdisplay für den Battery safety controller (BSC) 
 Dies ist ein angepasster Fork des Repository von shining-man um die Palette der Panlee Displays nutzen zu können
+-- ACHTUNG -- funktioniert im Moment nicht mit den Sponsorversionen
 
 <img src="https://github.com/user-attachments/assets/8db86295-1d72-4389-9650-80bd504366ac" height="500"/>
 <br><br>
